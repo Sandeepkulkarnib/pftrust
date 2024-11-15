@@ -1,0 +1,40 @@
+server:
+  port: 8089
+
+spring:
+  application:
+    name: pf-trust
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/pftrust_db?useSSL=true&createDatabaseIfNotExist=true&serverTimezone=Asia/Kolkata
+    username: root
+    password: rayees123
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    defer-datasource-initialization: false
+    show-sql: false
+
+  jackson:
+    time-zone: Asia/Kolkata
+
+  sql:
+    init:
+      mode: never
+
+
+
+jwt:
+  secret-key: D5DACC5B972192952E9DEF8AEAF8F3152850AF8736B024AAE7523458E6B050F2
+  expire-time:
+    access-token: 3600000
+    refresh-token: 43200000
+
+## File Storage Properties
+# All files uploaded through the REST API will be stored in this directory
+file:
+  upload-dir: "uploaded_files"
+
+application:
+  baseURL: http://localhost:8089

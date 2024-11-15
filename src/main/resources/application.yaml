@@ -1,0 +1,5 @@
+spring:
+  profiles:
+    active: ${PF_TRUST_PROFILE}
+  application:
+    name: pf-trust-application

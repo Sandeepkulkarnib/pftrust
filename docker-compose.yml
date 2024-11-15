@@ -1,0 +1,13 @@
+version: "3"
+services:
+  pftrust_db:
+    image: mysql:latest
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=rayees123
+      - MYSQL_DATABASE=pftrust_db
+      - MYSQL_USER=sa
+      - MYSQL_PASSWORD=password
+      - TZ=Asia/Kolkata
+    ports:
+    - 3306:3306
