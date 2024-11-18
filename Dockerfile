@@ -2,7 +2,7 @@ FROM openjdk:11
 
 WORKDIR /app
 
-COPY ./target/pftrust.war pftrust.war
+COPY ./target/pftrust.jar pftrust.jar
 
 COPY ./bin/start.sh start.sh
 
