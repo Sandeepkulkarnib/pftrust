@@ -1,5 +1,5 @@
 spring:
   profiles:
-    active: ${PF_TRUST_PROFILE}
+    active: local
   application:
     name: pf-trust-application
