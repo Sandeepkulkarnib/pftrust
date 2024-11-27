@@ -6,7 +6,7 @@ echo "========================================================================="
 echo "Running start.sh as:"
 echo "========================================================================="
 
-CMD="java -XX:MaxRAMPercentage=75.0 -jar pftrust.war"
+CMD="java -XX:MaxRAMPercentage=75.0 -jar pftrust.jar"
 echo "Launch command is $CMD"
 
 bash -c "$CMD"
