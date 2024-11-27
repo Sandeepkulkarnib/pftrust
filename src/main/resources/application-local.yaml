@@ -6,7 +6,7 @@ spring:
     name: pf-trust-application
 
   datasource:
-    url: jdbc:mysql://localhost:3360/pftrustdb?useSSL=true&createDatabaseIfNotExist=true&serverTimezone=Asia/Kolkata
+    url: jdbc:mysql://localhost:3306/pftrust_db?useSSL=true&createDatabaseIfNotExist=true&serverTimezone=Asia/Kolkata
     username: root
     password: rayees123
 
