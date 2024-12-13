@@ -8,6 +8,6 @@ COPY ./bin/start.sh start.sh
 
 RUN chmod +x start.sh
 
-EXPOSE 8089
+EXPOSE 8099
 
 ENTRYPOINT ["./start.sh"]
